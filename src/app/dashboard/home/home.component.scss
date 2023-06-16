@@ -1,0 +1,53 @@
+.toolbar {
+  background-image: url("./../../../assets/background graphics/toolbarbg.jpg");
+}
+.user-image {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  &-icon {
+    height: 18px;
+    font-size: 16px;
+  }
+}
+ul {
+  li {
+    list-style: none;
+  }
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+.example-container {
+  width: 100%;
+  height: 89.3%;
+}
+
+.example-sidenav-content {
+  display: block;
+  height: 100%;
+  margin: 20px;
+}
+
+.example-sidenav {
+  background-color: #394253;
+}
+.search {
+  position: relative;
+  width: 566px;
+  right: -12px;
+}
+.form-control {
+  border-radius: 42px;
+}
+::placeholder {
+  opacity: 0.4;
+}
+
+.weather-logo {
+  color: yellow;
+  margin-left: 29vh;
+  font-size: inherit;
+  scale: revert-layer;
+}

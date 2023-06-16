@@ -1,0 +1,50 @@
+  <mat-toolbar class="toolbar" color="primary">
+    <button mat-icon-button (click)="drawer.toggle()" class="example-icon"  aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Employee Managment</span>
+    <span class="material-symbols-outlined weather-logo">sunny</span>
+    <span class="example-spacer"></span>
+    <form class="d-flex search" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search employees or actions (Ex: Apply Leave, Attendance Approvals)" aria-label="Search">
+    </form>
+
+    <div class="row mr-2 ml-auto">
+      <ul class="row m-0 align-items-center">
+        <li>
+          <button
+            mat-button
+            [matMenuTriggerFor]="menu"
+            class="user mt-2 d-flex align-items-center" style="bottom: 3px;">
+            <img src="../../../assets/saurabh_profile.jpg" width="60px" alt=""
+              class="user-image mr-1 p-2" />
+            Saurabh K
+            <mat-icon class="user-image-icon ml-1">keyboard_arrow_down</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+              <i class="fa-solid fa-user m-2"></i>
+              Account
+            </button>
+            <button mat-menu-item>
+              <i class="fa-solid fa-gear m-2"></i>
+              Setting
+            </button>
+            <button mat-menu-item>
+              <i class="fa-solid fa-right-from-bracket m-2"></i>
+              Logout
+            </button>
+          </mat-menu>
+        </li>
+      </ul>
+    </div>
+  </mat-toolbar>
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side" opened>
+    <app-sidebar></app-sidebar>
+  </mat-drawer>
+  <div class="example-sidenav-content">
+    <router-outlet></router-outlet>
+  </div>
+</mat-drawer-container>
+

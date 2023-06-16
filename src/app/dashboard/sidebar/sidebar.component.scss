@@ -1,0 +1,27 @@
+.nav-side {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+ul a {
+  list-style: none;
+  padding: 11px 15px 10px 0px;
+  position: relative;
+  bottom: 130px;
+  margin: 10px 0px 10px 0px;
+  text-align: inherit;
+  color: white;
+}
+.icon-nav {
+  position: relative;
+  top: 5px;
+  right: 19px;
+  opacity: 0.3;
+}
+
+ul a{
+ text-decoration: none;
+ display: list-item;
+}
+

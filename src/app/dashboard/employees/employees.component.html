@@ -1,0 +1,26 @@
+
+
+<mat-card class="example-card">
+     <mat-card-title class="emp-dir">Employee Directory</mat-card-title>
+</mat-card>
+
+<mat-card class="table-card">
+    <table class="table table-striped">
+      <thead>
+        <th>EmployeeName</th>
+        <th>Email</th>
+        <th>JobTitle</th>
+        <th>Phone</th>
+        <th>EmployeeCode</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of employees">
+          <td>{{employee.fullName}}</td>
+          <td>{{employee.email}}</td>
+          <td>{{employee.jobTitle}}</td>
+          <td>{{employee.phone}}</td>
+          <td>{{employee.employeeCode}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </mat-card>
