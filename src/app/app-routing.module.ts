@@ -5,8 +5,11 @@ import { HomeComponent } from './dashboard/home/home.component';
 import { HomepageComponent } from './dashboard/homepage/homepage.component';
 import { MeComponent } from './dashboard/me/me.component';
 import { MyteamComponent } from './dashboard/myteam/myteam.component';
+import { LoginComponent } from './dashboard/login/login.component';
 
 const routes: Routes = [
+
+  // {path:'login',component:LoginComponent},
   {
     path: 'home', component: HomeComponent,
     children: [

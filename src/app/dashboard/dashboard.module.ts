@@ -8,6 +8,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { MeComponent } from './me/me.component';
 import { MyteamComponent } from './myteam/myteam.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 
 
@@ -18,12 +20,18 @@ import { HomepageComponent } from './homepage/homepage.component';
     SidebarComponent,
     MeComponent,
     MyteamComponent,
-    HomepageComponent
+    HomepageComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     CommonModule,
     RouterModule,
     MaterialModule
+  ],
+  exports:[
+    LoginComponent,
+    EmployeesComponent
   ]
 })
 export class DashboardModule { }

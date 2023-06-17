@@ -1,4 +1,4 @@
-export interface Employee{
+export interface PeriodicElement {
   fullName:string
   email:any
   jobTitle:string
@@ -6,3 +6,4 @@ export interface Employee{
   imageUrl:string
   employeeCode:number
 }
+
