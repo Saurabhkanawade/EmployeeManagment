@@ -1,10 +1,45 @@
-.example-card {
-  max-width: 400px;
-}
+
 
 .login-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Adjust this value as needed */
+  height: 100vh;
 }
+
+.mat-login{
+  padding: 60px 60px 60px 60px;
+}
+
+.mat-mdc-card-header {
+  display: flex;
+  padding: 0px 0px 25px 0px;
+  margin: 5px;
+  justify-content: center;
+}
+
+.mdc-card__actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  min-height: 52px;
+  padding: 8px;
+  justify-content: center;
+}
+
+.mat-mdc-form-field {
+  --mat-mdc-form-field-floating-label-scale: 0.75;
+  display: inline-flex;
+  flex-direction: column;
+  min-width: 0;
+  text-align: left;
+  /* background: red; */
+  width: 274px;
+}
+
+.mat-mdc-card {
+  box-shadow: 2px 0px 7px 1px rgba(0, 0, 0, 0.2), 0px 6px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  --mdc-elevated-card-container-color: #fff;
+}
+
