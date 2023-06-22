@@ -10,6 +10,7 @@ import { MyteamComponent } from './myteam/myteam.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -27,7 +28,8 @@ import { RegisterComponent } from './register/register.component';
   imports: [
     CommonModule,
     RouterModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule
   ],
   exports:[
     LoginComponent,
