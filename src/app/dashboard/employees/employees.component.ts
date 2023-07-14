@@ -23,7 +23,7 @@ export class EmployeesComponent implements OnInit {
 
   ]
 
-  displayedColumns: string[] = ['Fullname', 'Email', 'JobTitle', 'Phone', 'Image', 'EmployeeCode'];
+  displayedColumns: string[] = ['Fullname', 'Email', 'JobTitle', 'Phone', 'Image', 'EmployeeCode' , 'action'];
   dataSource = new MatTableDataSource<PeriodicElement>(this.ELEMENT_DATA);
 
   @ViewChild(MatPaginator) paginator!: MatPaginator ;
